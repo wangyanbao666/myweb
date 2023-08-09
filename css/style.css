@@ -27,12 +27,30 @@ h1 {
 }
 
 /*navbar*/
-header {
+#header-fix {
+	opacity: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 15px 5%;
 	background-color: #353940;
+	height: 80px;
+	transition: opacity 0.3s ease;
+}
+#header {
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 5%;
+	background-color: #353940;
+	height: 80px;
+	transition: opacity 0.3s ease;
 }
 
 .navbar-list {
@@ -50,6 +68,7 @@ header {
 	padding: 0px 20px;
 }
 .navbar-list li a{
+	font-size: 20px;
 	transition: all 0.1s ease 0.1s;
 	text-decoration: none;
 	color: #4b9ca3;
@@ -100,7 +119,8 @@ header {
 }
 
 .selfdesc {
-	margin: 50px 50px 25px 60px;
+	margin: 50px 20px 25px 60px;
+	display: flex;
 }
 
 .col-2-myself {
@@ -110,8 +130,43 @@ header {
 	margin: 10px 20px;
 }
 
-.me {
-	margin: 50px 70px;
+.myself-col-1 {
+	display: flex;
+	flex-direction: column;
+}
+.myself-col-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.me_img {
+	margin: 10px 10px;
+	height: 400px;
+	width: 300px;
+}
+
+.resume {
+	text-align: center;
+	height: 320px;
+	width: 212px;
+	margin: 10px 10px 10px 60px;
+}
+
+.resume img {
+	margin-top: 10px;
+	height: 300px;
+	width: 200px;
+	transition: all 0.1s ease;
+}
+.resume img:hover {
+	margin-top: 10px;
+	height: 320px;
+	width: 212px;
+	transition: all 0.2s ease;
+}
+
+.tech-skills li{
+
 }
 
 .brief_desc {
@@ -152,10 +207,10 @@ header {
 .col-2-education {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 	border-radius: 10px;
-	background-color: #505050;
 	margin: 10px 20px;
+	height: fit-content;
 }
 
 .col-2-education:hover {
@@ -166,22 +221,32 @@ header {
 	margin-left: 15px;
 }
 
-.sutd1 {
-	grid-column: 1;
+.education-col-1 {
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	border-radius: 10px 0 0 10px;
 	background-color: #C8C8C8;
-	padding: 40px 150px;
-	width: 70%;
+	padding: 40px 50px;
+	width: 60%;
 }
-.sutd2 {
+.education-col-2 {
+	display: flex;
 	color: #ffffff;
-	grid-column: 2;
 	align-items: center;
-	border-radius: 0px 10px 10px 0px;
+	justify-content: center;
 	background-color: #505050;
 	text-align: center;
-	width: 30%;
+	width: 13%;
+}
+.education-col-3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0px 10px 10px 0px;
+	background-color: #C8C8C8;
+	width: 27%;
 }
 
 /*work experience*/
