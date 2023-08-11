@@ -1,10 +1,13 @@
-document.querySelectorAll("#project img").forEach(image =>{
-	image.onclick = ()=>{
-		document.querySelector(".popup").style.display = "block";
-		document.querySelector(".popup img").src = image.getAttribute("src")
+document.addEventListener("DOMContentLoaded", function() {
+	// Check if the button to scroll was clicked before
+	const scrollToDivClicked = sessionStorage.getItem("scrollTo");
+	console.log(scrollToDivClicked)
+	if (scrollToDivClicked !== null){
+		const targetDiv = document.getElementById(scrollToDivClicked);
+		if (targetDiv) {
+			targetDiv.scrollIntoView({ behavior: "smooth" });
+		}
 	}
-})
-
-document.querySelector(".popup span").onclick = ()=>{
-	document.querySelector(".popup").style.display = "none";
-}
+	// Clear the session storage after checking
+	sessionStorage.removeItem("scrollTo");
+  });

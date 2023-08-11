@@ -11,17 +11,21 @@
 		<nav class="navbar navbar-collapse">
 			<div class="navbar-content">
 				<ul class="navbar-list">
-					<li class="nav-myself">
-						<a class="item-myself" href="#myself">About Myself</a>
+					<li class="nav-li">
+						<a class="header-home">Home</a>
+						<ul class="dropdown">
+							<li><a class="href-about">About</a></li>
+							<li><a class="href-education">Education</a></li>
+							<li><a class="href-project">Project</a></li>
+							<li><a class="href-work">Work Experience</a></li>
+						  </ul>
 					</li>
-					<li class="nav-education">
-						<a class="item-education" href="#education">Education</a>
+
+					<li class="nav-li">
+						<a class="header-sharing">Sharing</a>
 					</li>
-					<li class="nav-project">
-						<a class="item-project" href="#project">Project</a>
-					</li>
-					<li class="nav-work">
-						<a class="item-work" href="#work">Work Experience</a>
+					<li class="nav-li">
+						<a class="header-contact">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -31,21 +35,22 @@
 		<nav class="navbar navbar-collapse">
 			<div class="navbar-content">
 				<ul class="navbar-list">
-					<li class="nav-myself">
-						<a class="item-myself" href="#myself">About Myself</a>
+					<li class="nav-li">
+						<a class="header-home">Home</a>
+						<ul class="dropdown">
+							<li><a class="href-about">About</a></li>
+							<li><a class="href-education">Education</a></li>
+							<li><a class="href-project">Project</a></li>
+							<li><a class="href-work">Work Experience</a></li>
+						  </ul>
 					</li>
-					<li class="nav-education">
-						<a class="item-education" href="#education">Education</a>
+
+					<li class="nav-li">
+						<a class="header-sharing">Sharing</a>
 					</li>
-					<li class="nav-project">
-						<a class="item-project" href="#project">Project</a>
+					<li class="nav-li">
+						<a class="header-contact">Contact</a>
 					</li>
-					<li class="nav-work">
-						<a class="item-work" href="#work">Work Experience</a>
-					</li>
-					<!-- <li class="nav-contact">
-						<a class="item-contact" href="#contact">Contact</a>
-					</li> -->
 				</ul>
 			</div>
 		</nav>
@@ -65,7 +70,7 @@
 				<div class="selfdesc">
 					<div class="myself-col-1">
 						<div class="brief_desc">
-							<h1>About myself</h1>
+							<h1>About</h1>
 							<p>Currently pursuing a Bachelor of Engineering in Computer Science Design from the Singapore University of Technology and Design (SUTD), I have acquired in-depth knowledge of information system design, programming, and machine learning. With a strong academic background and hands-on experience in software development, I am confident in my ability to take on challenging projects and deliver outstanding results.</p>
 						</div>
 						<br>
@@ -89,7 +94,12 @@
 									</ul>
 								</li>
 								<li><b>Senior Middle 2 Scholarship holder</b> awarded by MOE</li>
-								<li>Language proficiency: <b>English</b> written and spoken (Fluent), <b>Mandarin</b> written and spoken (Native) </li>
+								<li><b>Language proficiency</b>: 
+									<ul>
+										<li>English written and spoken (Fluent)</li>
+										<li>Mandarin written and spoken (Native)</li> 
+									</ul>
+								</li>
 							</ul>
 						</div>	
 					</div>
@@ -117,7 +127,7 @@
 				<div class="col-2-education">
 					<div class="education-col-1">
 						<h2>Singapore University of Technology and Design</h3>
-						<ul>
+						<ul class="click-visible">
 							<li>Bachelor of Engineering (Computer Science Design), Highest Honours</li>
 							<li>Focus Track: Software Engineering</li>
 							<li>GPA: 4.71/5</li>
@@ -128,12 +138,24 @@
 						<h3>Singapore</h3>
 					</div>
 					<div class="education-col-3">
-						<h3>May 2020 to Present</h3>
+						<h3>Sept 2020 to Present</h3>
 					</div>
 				</div>
 
 				<div class="col-2-education">
-
+					<div class="education-col-1">
+						<h2>Hong Kong University of Science and Technology</h3>
+						<ul class="click-visible">
+							<li>Spring Term Exchange</li>
+							<li>Relavent Courses: Communication Network, Search Engine, Social Information Network, Game Programming </li>
+						</ul>
+					</div>
+					<div class="education-col-2">
+						<h3>Hong Kong</h3>
+					</div>
+					<div class="education-col-3">
+						<h3>Jan 2023 to May 2023</h3>
+					</div>
 				</div>
 			</div>
 			
@@ -141,19 +163,52 @@
 	
 		<div id="project">
 			<h1>Projects</h1>
-			<div class="project-container">
-				<div class="fpgaposter">
-					<img src="image/1D_CompStruct_poster-03-01.png" class="fpgaimage">
+			<div class="project-content">
+				<div class="project-container">
+					<div class="project-img-container">
+						<img src="image/fpga.png" class="class-img">
+					</div>
+					<div class="project-name">
+						<h2>XPLOSION: A Electronic Game Deisgned by FPGA</h2>
+					</div>
+		
+					<!-- <div class="fpgadesc">
+						<h2>XPLOSION: A Electronic Game Deisgned by FPGA</h2>
+						<a class="findoutmore" href="https://github.com/wangyanbao666/comp-struc-1d" target="_blank">Find Out More</a>
+						<a class="video" href="https://drive.google.com/file/d/1pYSdrqYH_wjjYCmcN36PWS4M6cNZIGnp/view?usp=sharing" target="_blank">Video</a>
+					</div> -->
 				</div>
-	
-				<div class="fpgadesc">
-					<h2>XPLOSION: A Electronic Game Deisgned by FPGA</h2>
-					<a class="findoutmore" href="https://github.com/wangyanbao666/comp-struc-1d" target="_blank">Find Out More</a>
-					<a class="video" href="https://drive.google.com/file/d/1pYSdrqYH_wjjYCmcN36PWS4M6cNZIGnp/view?usp=sharing" target="_blank">Video</a>
+
+				<div class="project-container">
+					<div class="project-img-container">
+						<img src="image/pick-before-go.png" class="class-img">
+					</div>
+					<div class="project-name">
+						<h2>Pick Before Go</h2>
+					</div>
+				</div>
+
+				<div class="project-container">
+					<div class="project-img-container">
+						<img src="image/pick-before-go.png" class="class-img">
+					</div>
+					<div class="project-name">
+						<h2>Pick Before Go</h2>
+					</div>
+				</div>
+
+				<div class="project-container">
+					<div class="project-img-container">
+						<img src="image/pick-before-go.png" class="class-img">
+					</div>
+					<div class="project-name">
+						<h2>Pick Before Go</h2>
+					</div>
 				</div>
 			</div>
+			
 	
-			<div class="project-container">
+			<!-- <div class="project-container">
 				<div class="androiddesc">
 					<h2>Pick Before Go: Android App Design</h2>
 					<a class="findoutmore" href="https://github.com/wangyanbao666/SUTD-CSD-Term4-50.001-1DProject-PickBeforeGo" target="_blank">Find Out More</a>
@@ -171,59 +226,53 @@
 					<h2>ICU Number Prediction Under Covid Situation</h2>
 					<a class="findoutmore" href="https://colab.research.google.com/drive/1Y8jb-Htdf9TeWICvcuG6hu6HinI8oHuE#scrollTo=KdW_8z1SJDv3" target="_blank">Find Out More</a>
 				</div>
-			</div>
+			</div> -->
 	
-			<div class="project-container project-end">
-				<div class="unitydesc">
-					<h2>Ball Game made by Unity</h2>
-				</div>
-				<div class="unityposter">
-					<img src="image/concentration.gif" class="fpgaimage">
-				</div>
-			</div>
 		</div>
 	
 		<div id="work">
 			<h1>Work Experience</h1>
-			<div class="col-2-work">
-				<div class="harvest1">
-					<h2>Harvest Fund, AI developer</h2>
-					<ul>
-						<li>
-							Read reports from J.P. Morgan to learn new technologies about how to use natural language processing to analyze the trends of stock market with descriptions from financial analysts and realize the technology using python. 
-						</li>
-						<li>
-							Perform data preprocessing job on large corpus of sentences from financial analysts such as segmenting the sentences and splitting the dataset based on their releasing time and company information to prepare the datasets for usage.
-						</li>
-						<li>
-							Using umap + hdbscan to cluster the sentences based on which topic or industry it represents and use Bert model to perform the natural language processing task to see which industry was popular during the past few years. Visualize the trend and pass the results to the mentor to perform further analysis. 
-						</li>
-					</ul>
+			<div class="work-content">
+				<div class="col-2-education">
+					<div class="education-col-1">
+						<h2>Moaah, Software Engineer</h2>
+						<ul class="click-visible">
+							<li>Built the service website for the company that serves to display results from the backend for users who subscribe our services. </li>
+							<li>Developed and maintained RESTful APIs written in Node.js. Responsible for improving the performance and scalability of existing backend services. Using queue-promise to execute tasks in parallel to reduce calculation and processing time. The search functions eventually run 5 times faster than before (4-5s compared to 20s). </li>
+							<li>Used Nginx server to deploy the frontend and backend services.</li>
+							<li>Created new pages and features for the company’s website using JavaScript and template HTML and CSS. Submit all website pages to be indexed by Google to make it rank higher in Google search result.</li>
+							<li>Implemented ML techniques to extract and process texts from receipts images which are later used in dangerous goods detection system to reflect the dangerous level of a cargo. The overall system achieves over 90% accuracy. </li>
+							<li>Conducted web crawling using python selenium and aiohttp to achieve concurrent scraping which significantly reduced the scraping time. Setup the company’s database in PostgreSQL with the data crawled.</li>
+						</ul>
+					</div>
+					<div class="education-col-2">
+						<h3>Singapore</h3>
+					</div>
+					<div class="education-col-3">
+						<h3>August 2022 to December 2022</h3>
+					</div>
 				</div>
-				<div class="harvest2">
-					<h3>Beijing, China</h3>
-					<h3>June 2021 to August 2021</h3>
-				</div>
-			</div>
-	
-			<div class="col-2-work2">
-				<div class="lawify1">
-					<h2>Lawify, AI developer part time </h2>
-					<ul>
-						<li>
-							Develop a model for generating answers to some questions given a contract to release lawyers from this tedious work by retraining Roberta-base model with our own dataset using AWS SageMaker and achieve a precision of more than 90%.  
-						</li>
-						<li>
-							Create a large dataset which includes more than 1000 documents each with 40 questions and corresponding answers. Preprocess the text by kicking off the weird characters from the raw text generated by pdfplumber to ensure the text is in a trainable format.
-						</li>
-						<li>
-							Embed the model to a web application by wrapping the answers generated to a json format and posting the data to an API for display. 
-						</li>
-					</ul>
-				</div>
-				<div class="lawify2">
-					<h3>Sinapore</h3>
-					<h3>January 2022 to April 2022</h3>
+				<div class="col-2-education">
+					<div class="education-col-1">
+						<h2>Harvest Fund, AI Developer</h2>
+						<ul class="click-visible">
+							<li>
+								Read reports from J.P. Morgan to learn new technologies about how to use natural language processing to analyze the trends of stock market with descriptions from financial analysts and realize the technology using python. 
+							</li>
+							<li>
+								Perform data preprocessing job on large corpus of sentences from financial analysts such as segmenting the sentences and splitting the dataset based on their releasing time and company information to prepare the datasets for usage.
+							</li>
+							<li>
+								Using umap + hdbscan to cluster the sentences based on which topic or industry it represents and use Bert model to perform the natural language processing task to see which industry was popular during the past few years. Visualize the trend and pass the results to the mentor to perform further analysis. 
+							</li>
+						</ul>
+					</div>
+					<div class="education-col-2">
+						<h3>Beijing, China</h3>
+					</div>
+					<div class="education-col-3">
+						<h3>June 2021 to August 2021</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -240,5 +289,6 @@
 
 	<script src="js/script.js"></script>
 	<script src="js/header.js"></script>
+	<script src="js/education.js"></script>
 </body>
 </html>
